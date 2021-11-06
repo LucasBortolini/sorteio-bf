@@ -78,13 +78,12 @@
 /* END OF THEMES */
 .flipdown {
   overflow: visible;
-  width: 280px;
 }
 
 .flipdown .rotor-group {
   position: relative;
   float: left;
-  padding-right: 30px;
+  padding-right: 22px;
 }
 
 .flipdown .rotor-group:last-child {
@@ -93,8 +92,8 @@
 
 .flipdown .rotor-group-heading:before {
   display: block;
-  height: 30px;
-  line-height: 30px;
+  height: 14px;
+  line-height: 14px;
   text-align: center;
 }
 
@@ -118,30 +117,30 @@
   content: "";
   position: absolute;
   bottom: 10px;
-  left: 75px;
-  width: 10px;
-  height: 10px;
+  left: 56px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
 }
 
 .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3):after {
   content: "";
   position: absolute;
-  bottom: 30px;
-  left: 75px;
-  width: 10px;
-  height: 10px;
+  bottom: 22px;
+  left: 56px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
 }
 
 .flipdown .rotor {
   position: relative;
   float: left;
-  width: 30px;
-  height: 50px;
+  width: 22px;
+  height: 40px;
   margin: 0px 5px 0px 0px;
   border-radius: 4px;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   perspective: 200px;
 }
@@ -154,15 +153,15 @@
 .flipdown .rotor-bottom {
   overflow: hidden;
   position: absolute;
-  width: 30px;
-  height: 25px;
+  width: 22px;
+  height: 20px;
 }
 
 .flipdown .rotor-leaf {
   z-index: 1;
   position: absolute;
-  width: 30px;
-  height: 50px;
+  width: 22px;
+  height: 40px;
   transform-style: preserve-3d;
   transition: transform 0s;
 }
@@ -176,8 +175,8 @@
 .flipdown .rotor-leaf-rear {
   overflow: hidden;
   position: absolute;
-  width: 30px;
-  height: 25px;
+  width: 22px;
+  height: 20px;
   margin: 0;
   transform: rotateX(0deg);
   backface-visibility: hidden;
@@ -185,7 +184,8 @@
 }
 
 .flipdown .rotor-leaf-front {
-  line-height: 50px;
+  padding-top: 4px;
+  line-height: 36px;
   border-radius: 4px 4px 0px 0px;
 }
 
@@ -196,13 +196,14 @@
 }
 
 .flipdown .rotor-top {
-  line-height: 50px;
+  padding-top: 4px;
+  line-height: 36px;
   border-radius: 4px 4px 0px 0px;
 }
 
 .flipdown .rotor-bottom {
   bottom: 0;
-  line-height: 0px;
+  line-height: 4px;
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -212,8 +213,8 @@
   position: absolute;
   bottom: 0px;
   left: 0px;
-  width: 30px;
-  height: 25px;
+  width: 22px;
+  height: 20px;
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -235,7 +236,7 @@
   .flipdown .rotor-top,
   .flipdown .rotor-bottom,
   .flipdown .rotor:after {
-    width: 30px;
+    width: 22px;
   }
 
   .flipdown .rotor-group {
@@ -254,11 +255,11 @@
 
   .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3):before,
   .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3):after {
-    left: 69px;
+    left: 54px;
   }
 
   .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3):before {
-    bottom: 13px;
+    bottom: 14px;
     height: 8px;
     width: 8px;
   }
@@ -271,12 +272,12 @@
 
   .flipdown .rotor-leaf-front,
   .flipdown .rotor-top {
-    line-height: 25px;
+    line-height: 20px;
   }
 
   .flipdown .rotor-leaf,
   .flipdown .rotor {
-    height: 25px;
+    height: 20px;
   }
 
   .flipdown .rotor-leaf-front,
@@ -284,6 +285,6 @@
   .flipdown .rotor-top,
   .flipdown .rotor-bottom,
   .flipdown .rotor:after {
-    height: 25px;
+    height: 20px;
   }
 }
