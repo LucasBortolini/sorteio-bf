@@ -1,1 +1,2 @@
-# sorteio-bf
+# blackfriday
+Black Friday Jekyll landing page

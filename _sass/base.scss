@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bg-banner {
+  background-image: url("images/bgbanner.jpg");
+  background-size: 1526px 550px;
+  background-position: left center;
+}
+
+.bg-banner-amazon {
+  background-image: url("images/banneramazon.jpg");
+}
+
+article {
+  ul {
+    @apply my-2;
+
+    li {
+      list-style: inside;
+    }
+  }
+
+  h2 {
+    @apply font-bold text-lg mb-2 mt-3;
+  }
+
+  h3 {
+    @apply font-medium text-lg mb-1 mt-2;
+  }
+
+  br {
+    @apply hidden;
+  }
+}
+
+.flipdown {
+  width: auto;
+  height: auto;
+}
+
+.flipdown .rotor-group:first-child,
+.flipdown .rotor-group-heading {
+  display: none;
+}
+
+.flipdown .rotor {
+  font-size: 3.7rem;
+}
+
+.flipdown .rotor-leaf-front, .flipdown .rotor-top {
+  line-height: 87px;
+}
+
+.flipdown .rotor-leaf-rear, .flipdown .rotor-bottom {
+  line-height: 9px;
+}
+
