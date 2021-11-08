@@ -41,24 +41,23 @@ article {
 }
 
 .flipdown {
-  width: auto;
+  width: 400px;
   height: auto;
-}
 
-.flipdown .rotor-group:first-child,
-.flipdown .rotor-group-heading {
-  display: none;
-}
+  .rotor-group:nth-child(1) .rotor-group-heading::before {
+    content: "Dias";
+  }
 
-.flipdown .rotor {
-  font-size: 3.7rem;
-}
+  .rotor-group:nth-child(2) .rotor-group-heading::before {
+    content: "Horas";
+  }
 
-.flipdown .rotor-leaf-front, .flipdown .rotor-top {
-  line-height: 87px;
-}
+  .rotor-group:nth-child(3) .rotor-group-heading::before {
+    content: "Min";
+  }
 
-.flipdown .rotor-leaf-rear, .flipdown .rotor-bottom {
-  line-height: 9px;
-}
+  .rotor-group:nth-child(4) .rotor-group-heading::before {
+    content: "Seg";
+  }
 
+}

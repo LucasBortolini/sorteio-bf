@@ -6,8 +6,9 @@ load = ->
   if forms.length == 1
     forms[0].addEventListener 'submit', submit
 
-  datetime = new Date(2021, 11, 26).getTime()
-  flipdown = new FlipDown(datetime, theme: 'light').start()
+  datetime = new Date(2021, 10, 26).getTime()
+  seconds = datetime/1000
+  flipdown = new FlipDown(seconds, theme: 'light').start()
 
 submit = (event) ->
   event.preventDefault()
