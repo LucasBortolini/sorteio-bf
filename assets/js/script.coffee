@@ -9,6 +9,7 @@ load = ->
   datetime = new Date(2021, 10, 26).getTime()
   seconds = datetime/1000
   flipdown = new FlipDown(seconds, theme: 'light').start()
+  flipdown2 = new FlipDown(seconds, "flipdown2", theme: 'light').start()
 
 submit = (event) ->
   event.preventDefault()
