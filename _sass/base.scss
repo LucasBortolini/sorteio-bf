@@ -44,8 +44,7 @@ article {
 }
 
 .flipdown {
-  width: 400px;
-  height: auto;
+  @apply w-auto h-auto;
 
   .rotor-group:nth-child(1) .rotor-group-heading::before {
     content: "Dias";
@@ -66,8 +65,6 @@ article {
 
 header {
   .flipdown {
-    width: 220px; 
-
     .rotor-group:nth-child(n+2):nth-child(-n+3):before,
     .rotor-group:nth-child(n+2):nth-child(-n+3):after {
       left: -15px;
@@ -77,8 +74,91 @@ header {
       @apply hidden;
     }
 
+    .flipdown .rotor-group:nth-child(3) {
+      padding-right: 0px;
+    }
+
     .rotor-group .rotor-group-heading::before {
       @apply tiny-text;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .flipdown {
+    @apply w-auto h-auto;
+  }
+
+  .flipdown .rotor {
+    font-size: 1.5rem;
+    margin-right: 3px;
+  }
+
+  .flipdown .rotor,
+  .flipdown .rotor-leaf,
+  .flipdown .rotor-leaf-front,
+  .flipdown .rotor-leaf-rear,
+  .flipdown .rotor-top,
+  .flipdown .rotor-bottom,
+  .flipdown .rotor:after {
+    width: 16px;
+  }
+
+  .flipdown .rotor-group {
+    padding-right: 20px;
+  }
+
+  .flipdown .rotor-group-heading:before {
+    font-size: 0.8rem;
+    height: 15px;
+    line-height: 12px;
+  }
+
+  .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3):before,
+  .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3):after {
+    left: 42px;
+  }
+
+  .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3):before {
+    bottom: 18px;
+    height: 6px;
+    width: 6px;
+  }
+
+  .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3):after {
+    bottom: 6px;
+    height: 6px;
+    width: 6px;
+  }
+
+  .flipdown .rotor-leaf-front,
+  .flipdown .rotor-top {
+    line-height: 27px;
+  }
+
+  .flipdown .rotor-leaf,
+  .flipdown .rotor {
+    height: 30px;
+  }
+
+  .flipdown .rotor-leaf-front,
+  .flipdown .rotor-leaf-rear,
+  .flipdown .rotor-top,
+  .flipdown .rotor-bottom,
+  .flipdown .rotor:after {
+    height: 15px;
+  }
+
+  header {
+    .flipdown .rotor-group:nth-child(3) {
+      padding-right: 0px;
+    }
+    
+    .flipdown {
+      .rotor-group:nth-child(n+2):nth-child(-n+3):before,
+      .rotor-group:nth-child(n+2):nth-child(-n+3):after {
+        left: -13px;
+      }
     }
   }
 }
