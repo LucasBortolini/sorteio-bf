@@ -1,0 +1,114 @@
+.slider {
+  -webkit-appearance: none;
+  --range: calc(var(--max) - var(--min));
+  --ratio: calc((var(--val) - var(--min))/var(--range));
+  --sx: calc(8*28px + var(--ratio)*(100% - 28px));
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 28px;
+  background: transparent;
+  font: 10px/1 arial, sans-serif;
+  border: none;
+}
+
+.slider, .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.slider::-webkit-slider-runnable-track {
+  box-sizing: border-box;
+  border: none;
+  width: 28px;
+  height: 8px;
+  background: #e7d55f;
+}
+
+.slider::-moz-range-track {
+  box-sizing: border-box;
+  border: none;
+  background: #ffffff;
+}
+
+.slider::-ms-track {
+  box-sizing: border-box;
+  border: none;
+  width: 27px;
+  height: 26px;
+  padding-top: 1px;
+  background: #e7d55f;
+}
+
+.slider::-moz-range-progress {
+  height: 0.5em;
+  /*background: #7b1c1a;*/
+}
+
+.slider::-ms-fill-lower {
+  height: 0.5em;
+  background: #7b1c1a;
+}
+
+.slider::-webkit-slider-thumb {
+  margin-top: -0.550em;
+  box-sizing: border-box;
+  border: none;
+  width: 27px;
+  height: 26px;
+  padding-top: 1px;
+  border-radius: 50%;
+  background: #7b1c1a;
+}
+
+/* selected */
+.slider::-moz-range-thumb {
+  background: #FFC600;
+  box-sizing: border-box;
+  border: none;
+  padding-top: 1px;
+  border-radius: 50%;
+}
+
+.slider::-ms-thumb {
+  background: #7b1c1a;
+  margin-top: 0;
+  box-sizing: border-box;
+  border: none;
+  width: 27px;
+  height: 26px;
+  padding-top: 1px;
+  border-radius: 50%;
+}
+
+.slider::-ms-tooltip {
+  display: none;
+}
+
+#tickmarks {
+  width: calc(100% + 2px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -32px 0px 0;
+}
+
+#tickmarks p {
+  background: #FFC600;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+  width: 19px;
+  height: 20px;
+  padding-top: 1px;
+  border-radius: 50%;
+}
+
+#tickmarks p.selected {
+  background: #ffffff;
+  color: #000000;
+  border-color: #3f6894;
+}
