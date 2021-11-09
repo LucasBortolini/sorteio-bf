@@ -1,8 +1,8 @@
 <section id="banner" class="bg-black bg-no-repeat bg-banner bg-cover">
-  <div class="container flex flex-col lg:flex-row flex-wrap lg:flex-nowrap items-center lg:justify-end mx-auto px-8 lg:pl-16 lg:pr-24 py-8 lg:py-0 text-white">
+  <div class="container flex flex-col lg:flex-row flex-wrap lg:flex-nowrap items-center lg:justify-end mx-auto lg:pl-16 lg:pr-24 text-white">
     <img src="{{ '/assets/images/banner-imagens.png' | relative_url }}" class="w-full h-full hidden lg:block">
-    <img src="{{ '/assets/images/banner-mobile.jpg' | relative_url }}" class="w-full h-full lg:hidden">
-    <div class="mt-6 lg:mt-0 py-8 lg:py-0 px-4 bg-gray-700 w-full lg:w-auto self-stretch flex flex-col justify-center items-center">
+    <img src="{{ '/assets/images/banner-mobile.jpg' | relative_url }}" class="w-full lg:hidden">
+    <div class="py-8 lg:py-0 px-4 bg-gray-700 w-full lg:w-auto self-stretch flex flex-col justify-center items-center">
       <h4 class="text-center text-sm mb-4 w-72">
         Cadastre-se aqui e escolha seu prêmio.<span class="block">Pronto! Você já está concorrendo</span>
       </h4>
@@ -18,7 +18,7 @@
             <input type="required" name="profilessource" value="cybermonday" />
           </div>
           <div>
-            <button type="submit" class="bg-yellow-300 border border-transparent hover:border-white w-full text-black rounded-2xl py-2 lg:mt-4 xl:mt-8">Quero Participar</button>
+            <button type="submit" data-href="./choose-your-prize" class="bg-yellow-300 border border-transparent hover:border-white w-full text-black rounded-2xl py-2 lg:mt-4 xl:mt-8">Quero Participar</button>
           </div>
           <label class="block lg:w-64 mt-3 lg:mt-8">
             <input required type="checkbox" name="privacy-policy" class="float-left mr-1">
