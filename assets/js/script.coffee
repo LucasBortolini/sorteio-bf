@@ -31,6 +31,7 @@ submit = (event) ->
       return response.json().then (json) ->
         if !json.error
           alert(form.dataset.feedback)
+          window.location.href = form.dataset.href
         return
     return
 
