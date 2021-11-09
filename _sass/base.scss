@@ -66,8 +66,19 @@ article {
 
 header {
   .flipdown {
-    .rotor-group .rotor-group-heading::before {
+    width: 220px; 
+
+    .rotor-group:nth-child(n+2):nth-child(-n+3):before,
+    .rotor-group:nth-child(n+2):nth-child(-n+3):after {
+      left: -15px;
+    }
+
+    .rotor-group:nth-child(4) {
       @apply hidden;
+    }
+
+    .rotor-group .rotor-group-heading::before {
+      @apply tiny-text;
     }
   }
 }
