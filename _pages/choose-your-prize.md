@@ -17,7 +17,7 @@ description:
   <h1 class="flex justify-center text-xl text-yellow-300 mb-6">
     Escolha seu Prêmio:
   </h1>
-  <div class="flex justify-center gap-16 px-18">
+  <div class="flex justify-center gap-4 px-18">
     {% for prize in site.prizes %}
       <div class="w-56 h-76 border-yellow-300 bg-contain bg-no-repeat bg-black border rounded-md pt-32 px-4 flex flex-col justify-between" style="background-image: url('{{prize.image}}');"> 
         <ul class="list-disc list-inside mt-14">
