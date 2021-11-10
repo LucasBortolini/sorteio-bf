@@ -6,10 +6,18 @@ load = ->
   if forms.length == 1
     forms[0].addEventListener 'submit', submit
 
-  datetime = new Date(2021, 10, 26).getTime()
-  seconds = datetime/1000
-  flipdown = new FlipDown(seconds, theme: 'light').start()
-  flipdown2 = new FlipDown(seconds, "flipdown2", theme: 'light').start()
+  blackfriday = new Date(2021, 10, 26).getTime()
+  bf_seconds = blackfriday/1000
+
+  today = new Date()
+  tomorrow = new Date(today)
+  tomorrow.setDate(tomorrow.getDate() + 1)
+  tomorrow.setHours(0,0,0,0)
+  tm_seconds = tomorrow/1000
+
+  flipdown = new FlipDown(tm_seconds, theme: 'light').start()
+  
+  flipdown2 = new FlipDown(bf_seconds, "flipdown2", theme: 'light').start()
 
 submit = (event) ->
   event.preventDefault()
