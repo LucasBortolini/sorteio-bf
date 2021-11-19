@@ -2,7 +2,7 @@
 layout: post
 title: Como aproveitar a Black Friday 2021 da melhor forma
 permalink: /blog/como-aproveitar-a-black-friday-2021-da-melhor-forma.html
-image: /assets/images/aproveitar.png
+image: /assets/images/aproveitar.jpg
 description: Se você é um dos consumidores que espera ansiosamente pela Black Friday todo ano, você é um dos nossos! Afinal, a Black Friday é melhor data para comprar aquele produto que você tanto sonha e pelo melhor preço!
 ---
 
